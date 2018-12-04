@@ -17,3 +17,12 @@ You must login and create an API key in [openweathermap.org](https://openweather
 ## Weather JSON parsing
 
 You will find usefull code for parsing the weather data in [this gist](https://gist.github.com/teohaik/efddbf384d762eb78b1a4e9aae23be3f) 
+
+
+## More on Fragments
+
+https://abhiandroid.com/ui/fragment
+
+https://guides.codepath.com/android/creating-and-using-fragments
+
+https://developer.android.com/training/basics/fragments/creating
