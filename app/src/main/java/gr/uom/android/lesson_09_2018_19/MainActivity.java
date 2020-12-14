@@ -1,6 +1,7 @@
 package gr.uom.android.lesson_09_2018_19;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -26,6 +27,17 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra("name",givenName);
 
                 startActivity(intent);
+            }
+        });
+
+        Button buttonMap = findViewById(R.id.btnMap);
+
+        buttonMap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Uri location = Uri.parse("geo:40.6232258,22.9585171,14z");
+                Intent mapIntent = new Intent(Intent.ACTION_VIEW, location);
+                startActivity(mapIntent);
             }
         });
     }
